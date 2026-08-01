@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node --experimental-strip-types src/core/index.ts",
+    "start": "node --experimental-strip-types src/core/encode.ts",
+    "debug": "node --experimental-strip-types src/core/debug.ts",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -24,10 +25,12 @@
   "homepage": "https://github.com/ASpooky/KillingStone#readme",
   "devDependencies": {
     "@types/node": "^26.1.2",
+    "@types/pngjs": "^6.0.5",
     "prettier": "^3.9.6",
     "typescript": "^7.0.2"
   },
   "dependencies": {
-    "canvas": "^3.2.3"
+    "canvas": "^3.2.3",
+    "pngjs": "^7.0.0"
   }
 }
