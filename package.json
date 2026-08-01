@@ -7,6 +7,8 @@
   "scripts": {
     "start": "node --experimental-strip-types src/core/encode.ts",
     "debug": "node --experimental-strip-types src/core/debug.ts",
+    "bench:fixtures": "node --experimental-strip-types scripts/generate-bench-fixtures.ts",
+    "bench": "node --experimental-strip-types scripts/bench.ts",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
